@@ -4,6 +4,10 @@ public class Police {
     private int adultAge = 18;
 
     public boolean checkDriverAdult(Driver driver) {
-        return (driver.getAge() >= adultAge);
+        return (isAdult(driver.getAge()));
+    }
+
+    public boolean isAdult(int age) {
+        return (age >= adultAge);
     }
 }
