@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class PoliceTest {
     @Test
     void should_check_driver_age() {
-        assertTrue(new Police().checkDriver(new Driver(18)));
-        assertFalse(new Police().checkDriver(new Driver(17)));
+        assertTrue(new Police().checkDriverAdult(new Driver(18)));
+        assertFalse(new Police().checkDriverAdult(new Driver(17)));
     }
 }
